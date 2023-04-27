@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Tip Calculator</title>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    </head>
+
+    <body>
+<div class="calculator">
+	<h1 class="calculator_title">Tip Calculator</h1>
+	<div class="field">
+		<label for="amount" class="field_label">Total Billing Amount </label>
+		<input type="text" name="amount" id="amount" placeholder="$" class="field_input">
+		</input>
+	</div>
+	<div class="field">
+		<label for="tip" class="field_label">Tip percentage</label>
+		<select name="tip" id="tip" class="field_input">
+			<option value="0" selected>Select Tip 😋</option>
+			<option value="10">10% 😁</option>
+			<option value="15">15% 😊</option>
+			<option value="20">20% 🤩</option>
+		</select>
+	</div>
+	<div class="field">
+		<label for="people" class="field_label">People Contributing </label>
+		<input type="number" value="0" min="1" step="1" id="people" class="field_input">
+	</div>
+	<button id="calculate">Click to Calculate</button>
+	<div class="info">
+		<p class="info_tip"></p>
+		<p class="info_total"></p>
+	</div>
+</div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
